@@ -1,0 +1,16 @@
+name: fenicsx
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.10
+  - fenics-dolfinx
+  - petsc=*=*complex*
+  - petsc4py
+  - mpi4py
+  - numpy
+  - basix
+  - ufl
+  - gmsh
+  - python-gmsh
+  - pyvista
+  - scipy

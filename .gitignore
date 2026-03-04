@@ -1,0 +1,35 @@
+# Output files
+*.h5
+*.xdmf
+*.bp/
+*.bp
+*.msh
+*.png
+*.json
+!environment.yml
+!.claude/settings.local.json
+
+# Simulation output directories
+results/
+output_pml/
+E_solution.*
+A_z.*
+mt.*
+eigenvector.*
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+
+# IDE
+.vscode/
+.idea/
+
+# Conda
+.conda/
