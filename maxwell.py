@@ -20,7 +20,6 @@ fdim = domain.topology.dim - 1
 #defining \Gamma_d as the boundary x=1 (example, can change in the future. Then, PEC BC will be used on the rest of the boundary.)
 def on_x1(x): return np.isclose(x[0], 1.0)
 def on_boundary(x): return np.full(x.shape[1], True, dtype=bool)
-
 facets_x1 = locate_entities_boundary(domain, fdim, on_x1)
 facets_all = locate_entities_boundary(domain, fdim, on_boundary)
 
@@ -39,7 +38,7 @@ E, v = ufl.TrialFunction(V), ufl.TestFunction(V)
 
 # 3) Parameters (complex). Eta: impedance/admittance in scalar model--\eta(\omega) with \Re(\eta)>0, see eqn 1.6 in my proposal notes. Note here \eta = 1+.02 i originally.
 omega, mu, eps = 10.0, 1.0, 1.0
-eta = PETSc.ScalarType(1.0 + 0.0j)
+eta = PETSc.ScalarType(1.0 + 0.2j)
 mu_inv = 1.0 / mu
 
 # 4) Source term (Vector DG space)
