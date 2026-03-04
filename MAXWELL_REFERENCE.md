@@ -57,7 +57,7 @@ eta = PETSc.ScalarType(1.0 + 0.0j)
 ```
 
 **Current state:** Simplified to purely real (no imaginary part).
-The professor's original used `eta = 1.0 + 0.2j`.
+The original used `eta = 1.0 + 0.2j`.
 
 **What to do:** Replace with the frequency-dependent model from
 equation 1.6 in your proposal notes. The requirement is that
@@ -322,7 +322,7 @@ Source f (lines 47-50)             ------>   right-hand side L              (lin
 
 ---
 
-## Professor's Noted Action Items
+## Noted Action Items
 
 | Priority | What | Where | Notes |
 |----------|------|-------|-------|
